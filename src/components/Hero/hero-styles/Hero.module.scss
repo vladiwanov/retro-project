@@ -1,4 +1,4 @@
-@import 'styles/main.scss';
+@import 'src/styles/main.scss';
 @import './heroTitles';
 
 .hero {
@@ -6,6 +6,7 @@
   text-align: center;
   margin:  auto;
   // background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
   background-size:cover;
   background-image:

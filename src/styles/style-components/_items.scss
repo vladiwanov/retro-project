@@ -28,13 +28,13 @@
 
 
 
-@media screen and(min-width:$mobile) {
+@media screen and (min-width:$mobile) {
   .items{
     font-size: 14px;
   }
 }
 
-@media screen and(min-width: $tablet) {
+@media screen and (min-width: $tablet) {
   .items{
     font-size: 16px;
     // max-width: calc(100%/2);
@@ -45,7 +45,7 @@
     }
 }
 
-@media screen and(min-width: $desktop) {
+@media screen and (min-width: $desktop) {
   .items{
     margin-left: 30px;
     font-size: 18px;

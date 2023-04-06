@@ -1,4 +1,4 @@
-@import 'styles/main.scss';
+@import 'src/styles/main.scss';
 // @import '../Footer.module.scss';
 
 .contacts {
@@ -65,7 +65,7 @@
 
 .emailPack{
   display: flex;
-  justify-content: end;
+  justify-content:flex-end;
   align-items: center;
   &:hover {
     color: $accent-color;
