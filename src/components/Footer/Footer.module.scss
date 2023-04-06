@@ -1,0 +1,55 @@
+@import 'styles/main.scss';
+
+.footer {
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+  // padding: 20px 0;
+  margin: auto;
+  background-color: $bgc-additional;
+  width: 100%;
+  transform: translateY (0%);
+
+  &:focus{
+    transition: translateY(100%)  500 $timing-function;
+    translate: 100%;
+  }
+}
+
+
+
+
+.footerTitle {
+  display: block;
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+  outline: 1px solid red;
+}
+
+@media screen and (min-width: $mobile) {
+  .footerTitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .footerTitle {
+    font-size: 18px;
+    // margin-bottom: 20px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    // align-items: center;
+    align-items: baseline;
+    
+  }
+}
+@media screen and (min-width: $desktop) {
+  .footerTitle {
+    font-size: 20px;
+    // margin-bottom: 25px;
+  }
+}

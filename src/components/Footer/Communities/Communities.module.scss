@@ -1,0 +1,83 @@
+@import 'styles/main.scss';
+// @import '../Contacts/Contacts.module.scss';
+// @import '../Footer.module.scss';
+
+
+// @import '../../../../styles/contacts-animation.module';
+
+.social{
+ text-align: center;
+
+}
+
+// .community{
+//   margin: auto;
+//   // color: $text-secondary-color;
+//   font-size: 18px;
+// }
+
+
+
+
+
+.socialnetworks{
+  display: flex;
+  flex-direction: row;
+    justify-content: center;
+  // justify-content: space-around;
+}
+
+.socialIcon{
+  box-sizing: content-box;
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 3px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid $primary-color;
+  border-radius: 20%;
+  // background-color: $accent-color;
+  fill:$primary-color;
+  &:hover{
+    fill: $accent-color;
+    background-color: $primary-color;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 250ms linear;
+}
+}
+
+
+
+@media screen and (min-width: $mobile) {
+  .socialIcon{
+    font-size: 14px;
+    width: 12px;
+    height: 12px;
+    margin: 15px 15px;
+
+  padding: 5px;
+  }
+  .socialnetworks{
+    display: flex;
+    
+  }
+
+}
+@media screen and (min-width: $tablet) {
+  .socialIcon{
+    font-size: 18px;
+    width: 15px;
+    height: 15px;
+    margin: 20px 15px;
+
+  }
+}
+@media screen and (min-width: $desktop) {
+  .socialIcon{
+    // font-size: 20px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+  }
+}

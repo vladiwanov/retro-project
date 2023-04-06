@@ -1,0 +1,46 @@
+ b {
+    display: inline-block;
+    // margin: 40px auto 80px;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03rem;
+  }
+
+  .text {
+    margin: 30px auto 45px;
+    // color: $primary-color;
+  }
+ 
+ @media screen and (min-width: $mobile) {
+.text {
+    margin: 10px auto 45px;
+  }
+ }
+
+@media screen and (min-width: $tablet) {
+
+ b {
+      max-width: 580px;
+      font-size: 16px;
+      line-height: calc(18 / 16);
+    }
+}
+
+    @media screen and (min-width: $desktop) {
+
+b {
+      max-width: 800px;
+      // margin: 60px auto 0;
+      text-align: center;
+      font-style: Bold;
+      font-size: 18px;
+      line-height: calc(20 / 18);
+    }
+
+  .text {
+      margin: 20px auto 35px;
+      font-size: 20px;
+      // line-height: calc(25 / 20);
+      line-height: calc(width/100);
+    }
+}

@@ -1,0 +1,63 @@
+@import 'styles/main.scss';
+@import './heroTitles';
+
+.hero {
+  display: block;
+  text-align: center;
+  margin:  auto;
+  // background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-image:
+  linear-gradient(
+    to right,
+    rgba(50, 50, 50, 0.2),
+    rgba(50, 50, 50, 0.2)
+  ),
+  url(../../../images/hero-background1.jpg),
+}
+
+.heroTextSection{
+display: block;
+margin: auto;
+text-align: center;
+  padding-bottom: 80px;
+}
+
+.statement{
+  display: block;
+  margin: 50px auto 0;
+  align-self: end;
+  // text-align: end;
+max-width: 1100px;
+color: "";
+}
+
+.comment{
+  display: block;
+  margin: auto;
+  text-align: end;
+  font-weight: 600;
+}
+
+.logo{
+  display: block;
+  margin: auto;
+width:20%;
+}
+
+.logoImg{
+  width:auto;
+height: auto;
+margin: auto;
+scale: 0.6;
+}
+
+@media screen and (min-width:$desktop) {
+
+  .hero{
+  height: 940px;
+
+  }
+  
+}

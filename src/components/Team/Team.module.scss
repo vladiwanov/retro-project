@@ -1,0 +1,144 @@
+@import 'styles/main.scss';
+
+.team {
+
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+
+  //  max-width: $mobile;
+  height: 100%;
+  margin: 0 auto;
+  // color: rgb(149, 188, 128);
+  color: rgb(146, 199, 55);
+  // color: rgb(110, 185, 64);
+
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(20, 20, 20, 0.84),
+      rgba(20, 20, 20, 0.84) /*  rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6) */
+    ),
+    url(../../images/team-img5.jpg);
+}
+
+
+
+
+.accent{
+  font-weight: bold;
+}
+
+
+
+
+.companyName{
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 5px;
+  // color: rgb(149, 188, 128);
+  color: rgb(146, 199, 55);
+  // color: rgb(110, 185, 64);
+
+}
+
+
+.directions{
+  // color: rgb(169, 237, 169);
+  // color: rgb(149, 188, 128);
+  color: rgb(146, 199, 55);
+  // color: rgb(110, 185, 64);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.directionsContainer{
+  margin-top: 20px;
+}
+
+.directionsList{
+  display: block;
+
+}
+
+
+.teamContent {
+  display: blok;
+  // text-align: center;
+  margin: auto;
+  // max-width: 100%;
+}
+
+
+.teamItems {
+  text-align: start;
+  margin-right: 30px;
+  color: $secondary-color;
+  list-style: circle;
+  font-weight: 300;
+  // transform: scale(0);
+
+}
+
+.list {
+  display: block;
+  text-align: start;
+  margin-left: 10px;
+  list-style: circle;
+}
+
+@media screen and (min-width:$mobile) {
+  .companyName{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:$tablet) {
+  .teamContent {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+
+  .companyName{
+  font-size: 20px;
+}
+
+
+  .directionsContainer{
+    margin-top: 20px;
+  }
+
+  .list{
+    // margin-left: 30px;
+  }
+
+.directionsList{
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: start;
+}
+
+.teamItems{
+  // max-width: 1600px;
+}
+}
+
+@media screen and (min-width:$desktop) {
+  .directionsContainer{
+    margin-top: 40px;
+  }
+
+.companyName{
+  font-size: 24px;
+}
+
+
+  .list{
+    margin-left: 30px;
+  }
+}

@@ -1,0 +1,33 @@
+@import 'styles/main.scss';
+// .appear{
+//     opacity: 0;
+//     // transform: translateX(100%);
+// }
+
+// .appearActive{
+//  opacity: 1;
+// //  transition: all 10000ms linear;
+// }
+
+
+.enter{
+    opacity: 0;
+    // transform: translateX(100%);
+}
+
+.enterActive{
+//  transform: translateX(0);
+ opacity: 1;
+ transition: all $timeoutValue linear;
+}
+
+.exit{
+// transform: translateX(0);
+opacity: 1;
+}
+
+.exitActive{
+//  transform: translateX(-100%);
+ opacity: 0;
+transition: all $timeoutValue linear;
+}

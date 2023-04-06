@@ -1,0 +1,25 @@
+{
+  // "editor.fontFamily": "Ubuntu Mono derivative Powerline",
+  // "editor.fontFamily": "Menlo",
+  // "editor.fontFamily": "Space Mono for Powerline",
+  // "editor.fontFamily": "Monaco",
+  // "editor.fontFamily": "Apple",
+  "editor.fontFamily": "Styrene B LC Light",
+  // "editor.fontFamily": "Space Mono for Powerline Menlo, Monaco, 'Courier New', monospace, Styrene A Web",
+  "editor.fontLigatures": true,
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.fontSize": 13,
+  "workbench.colorTheme": "MyColorThemeBblack",
+  "editor.hover.enabled": false, // disable suggestions on hover
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+  "editor.tabSize": 2,
+}

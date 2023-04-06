@@ -1,0 +1,149 @@
+@import 'styles/main.scss';
+// @import '../Footer.module.scss';
+
+.contacts {
+  box-sizing: content-box;
+  display: block;
+  padding: 0;
+  border: 1px solid transparent;
+}
+
+.contactsTitle {
+  display: block;
+  margin:auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+.contactsContainer{
+  display: block;
+  width: 270px;
+
+  grid-template-columns: 1rf;
+  margin: auto;
+  text-align: center;
+  padding: 0;
+}
+
+
+.contact{
+  display: block;
+  // justify-content: center;
+ text-align: end;
+    font-size: 12px;
+  color: $primary-color;
+  // &:hover {
+  //   color: $accent-color;
+  //   cursor: pointer;
+  //   transform: scale(1.1);
+  //   transition: transform 250ms linear;
+  // }
+}
+
+
+.address{
+  font-size: 14px;
+}
+
+
+
+// .icon {
+//   width: 30px;
+//   height: auto;
+//   display: inline-block;
+//   margin: auto;
+// }
+
+
+
+.emailContent {
+  margin-left: 20px;
+  color: inherit;
+}
+
+
+.emailPack{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  &:hover {
+    color: $accent-color;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 250ms linear;
+  }
+}
+
+.emailIcon{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  fill:$primary-color;
+//   &:hover{
+//     fill: $accent-color;
+//     cursor: pointer;
+//     transform: scale(1.1);
+//     transition: transform 250ms linear;
+// }
+}
+
+@media screen and (min-width: $mobile) {
+  .contact {
+    font-size: 12px;
+  }
+
+  .emailIcon{
+    width: 15px;
+    height: 15px;
+  }
+
+}
+@media screen and (min-width: $tablet) {
+
+  .contact {
+    font-size: 14px;
+  }
+
+  .emailIcon{
+    width: 15px;
+   height: 15px;
+
+  }
+
+ .contactsContainer{
+    width: 300px;
+  }
+
+  .address{
+    font-size: 16px;
+  }
+  
+
+}
+@media screen and (min-width: $desktop) {
+
+  .contactsContainer{
+    width: 500px;
+  }
+
+  .contactsTitle {
+    margin-left: 200px;
+  }
+
+  .contact {
+    font-size: 16px;
+  }
+
+  .emailIcon{
+    width: 25px;
+    height: 25px;
+  }
+
+  .address{
+    font-size: 18px;
+  }
+  
+
+}

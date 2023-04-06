@@ -1,0 +1,158 @@
+@import 'styles/main';
+
+.portfolio{
+color:$primary-color;
+background-color: #304030;
+color: rgb(220, 220, 143);
+
+}
+
+.portfolioContent{
+  padding: 10px;
+}
+
+.portfolioList{
+  display: grid; // создаем grid контейнер
+  grid-gap: 0.5vw;
+  // display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.portfolioItem{
+
+  display: block;
+  text-align: center;
+  margin: 5px 10px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.portfolioImage{
+  // width: 450px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+
+.portfolioItemContent{
+  box-sizing: border-box;
+  display: block;
+  max-width: 95%;
+  margin: auto;
+  // flex-basis: 95%;
+  // flex-basis: 80%;
+}
+
+.portfolioSubtitle{
+  // color: rgb(220, 220, 143);
+  max-width: 100%;
+  height: 7rem;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+// ----------------modal---
+.modalSubtitle{
+  display: block;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+}
+
+
+.modalPortfolioImage{
+  display: block;
+  margin: auto;
+width: 100%;
+// height: auto;
+max-height: auto;
+display: block;
+}
+
+
+// -----------------------------------------
+
+
+
+// ----------mobile------------------------
+
+@media screen and (min-width: $mobile) {
+    .portfolioSubtitle{
+    font-size: 14px;
+  }
+    .portfolioItemContent{
+      max-width: 97%;
+  }
+}
+
+
+// ----------tablet------------------------
+
+
+@media screen and (min-width: $tablet) {
+  .portfolioList{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolioContent{
+    padding: 20px;
+  }
+
+  .portfolioItem{
+    display: block;
+    text-align: center;
+  margin: 20px 20px;
+
+  }
+  
+  .portfolioItemContent{
+    max-width: 100%;
+
+  // flex-basis: 95%;
+  // flex-basis: 400px;
+  }
+
+  .portfolioSubtitle{
+    display: block;
+    margin: auto;
+font-size: 16px;
+    // color: rgb(220, 220, 143);
+    max-width: 500px;
+  }
+
+}
+
+
+
+
+
+// ----------desktop------------------------
+
+@media screen and (min-width: $desktop) {
+  
+  .portfolioItemContent{
+    // flex-basis: 600px;
+  }
+
+  .portfolioSubtitle{
+    max-width: 500px;
+    font-size: 18px;
+  }
+
+.portfolioList{
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    // align-items: baseline;
+    grid-template-columns: repeat(3, 1fr);
+}
+}

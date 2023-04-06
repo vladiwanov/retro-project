@@ -1,0 +1,56 @@
+@import 'styles/main';
+
+
+.navigation{
+  display: block;
+  padding: 0;
+}
+
+
+.navigationList{
+// outline: 1px solid red;
+}
+
+
+.navigationItem{
+  color: $primary-color;
+  font-size: 12px;
+  margin: 0 10px;
+  &:focus,
+  &:hover{
+color: $accent-color;
+}
+}
+
+@media screen and (min-width:$mobile) {
+  
+  .navigationItem{
+    font-size: 14px;
+    margin: 0 15px;
+  }
+}
+
+
+
+@media screen and (min-width:$tablet) {
+  .navigationList{
+  display: flex;
+  justify-content: center;
+  // row-gap: 60px;
+  }
+
+  .navigationItem{
+    font-size:16px;
+  }
+
+
+}
+
+
+
+@media screen and (min-width:$desktop) {
+  .navigationItem{
+  font-size: 18px;
+  margin: 0 50px;
+  }
+}

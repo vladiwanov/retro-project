@@ -1,0 +1,80 @@
+
+.contactsAnimation{
+  animation: animate100 1000ms $timing-function forwards;
+}
+  
+.contentAnimation{
+  animation: animate200 1000ms $timing-function forwards;
+}
+
+.animatoinActive{
+   animation: animate200 800ms $timing-function forwards;
+}
+
+  // --------------------------------------
+
+  @keyframes animate100 {
+    0% {
+      opacity: 0;
+  transform: translateX(-100%);
+    }
+  
+    30% {
+      opacity: 0;
+  transform: translateX(-100%);
+    }
+  
+    100% {
+      opacity: 1;
+  transform: translateX(0);
+    }
+  }
+
+  
+  @keyframes animate200 {
+    0% {
+      opacity: 0;
+    }
+  
+    30% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes animate300 {
+    0% {
+      transform: scale(0);
+    }
+  
+    30% {
+      transform: scale(0);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+
+  .animationTitle,
+.animationItems{
+    opacity: 0;
+}
+
+
+  // .appear{
+  //   // transform: translateX(-100%);
+  //   opacity: 0;
+  // }
+
+  // .appearActive{
+  //   // transform: translateX(0);
+  //   opacity: 1;
+  //   // transition: all  3000ms $timing-function;
+  //   transition: all  1500ms linear;
+  // }
