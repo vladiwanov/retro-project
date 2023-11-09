@@ -13,7 +13,7 @@
     "source.fixAll.eslint": true
   },
   "editor.fontSize": 13,
-  "workbench.colorTheme": "MyColorThemeBblack",
+  "workbench.colorTheme": "MyBlackGruvbox",
   "editor.hover.enabled": false, // disable suggestions on hover
   "bracket-pair-colorizer-2.activeScopeCSS": [
     "borderStyle : solid",
@@ -21,5 +21,5 @@
     "borderColor : {color}",
     "opacity: 0.5"
   ],
-  "editor.tabSize": 2,
+  "editor.tabSize": 2
 }

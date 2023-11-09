@@ -2,7 +2,7 @@
 
 .portfolio{
 color:$primary-color;
-background-color: #304030;
+  background-color: #304030;
 color: rgb(220, 220, 143);
 
 }
@@ -26,6 +26,9 @@ color: rgb(220, 220, 143);
   margin: 5px 10px;
   &:hover{
     cursor: pointer;
+    scale: 1.1;
+    transition-property: scale;
+    transition-duration:500ms;
   }
 }
 
