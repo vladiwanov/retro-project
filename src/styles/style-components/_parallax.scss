@@ -1,0 +1,47 @@
+.parallax {
+    position: relative;
+    perspective: 1px;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bg {
+    // margin-top: 900px;
+    position: absolute;
+    // top: 0;
+    inset: 0;
+    z-index: -5;
+    width: 100vw;
+    // height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../images/hero-background1.jpg);
+    transform: translate3d(0, 0, -3px) scale(4.6);
+    // transform: translateZ(-1px) translateX(0px) translateY(0px) scale(2);
+    // object-fit: cover;
+
+
+
+
+
+
+
+}
+
+.textItem {
+    // margin: 70vh auto 0;
+    // transform: translateZ(0);
+    // font-size: 32px;
+    text-align: center;
+    color: #fff;
+    height: 90vh;
+    padding: 0;
+    margin: 0 auto;
+    // width: 100%;
+    // background-color: yellow;
+
+}

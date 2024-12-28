@@ -10,7 +10,7 @@ export default function Hero() {
   const hero = LanguagesContent('hero');
   return (
     <section className={`${s.section} ${s.hero}`}>
-      {/* <LanguageButton /> */}
+      <LanguageButton />
       <div className={s.heroTextSection}>
         <AppBar />
         {/* <Navigation /> */}
@@ -22,7 +22,7 @@ export default function Hero() {
           <img src={logo} alt="retro project logo" className={s.logoImg} />
         </div>
         <h1 className={` ${s.heroTitle}`}>{hero.title}</h1>
-        {/* <b className={s.heroSubtitle}>{hero.text}</b> */}
+        <b className={s.heroSubtitle}>{hero.text}</b>
       </div>
     </section>
   );
