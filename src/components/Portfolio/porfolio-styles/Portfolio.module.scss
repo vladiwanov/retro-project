@@ -1,17 +1,17 @@
 @import 'src/styles/main';
 
-.portfolio{
-color:$primary-color;
+.portfolio {
+  color: $primary-color;
   background-color: #304030;
-color: rgb(220, 220, 143);
+  color: rgb(220, 220, 143);
 
 }
 
-.portfolioContent{
+.portfolioContent {
   padding: 10px;
 }
 
-.portfolioList{
+.portfolioList {
   display: grid; // создаем grid контейнер
   grid-gap: 0.5vw;
   // display: block;
@@ -19,20 +19,21 @@ color: rgb(220, 220, 143);
   margin: auto;
 }
 
-.portfolioItem{
+.portfolioItem {
 
   display: block;
   text-align: center;
   margin: 5px 10px;
-  &:hover{
+
+  &:hover {
     cursor: pointer;
     scale: 1.1;
     transition-property: scale;
-    transition-duration:500ms;
+    transition-duration: 500ms;
   }
 }
 
-.portfolioImage{
+.portfolioImage {
   // width: 450px;
   width: 100%;
   height: auto;
@@ -41,7 +42,7 @@ color: rgb(220, 220, 143);
 }
 
 
-.portfolioItemContent{
+.portfolioItemContent {
   box-sizing: border-box;
   display: block;
   max-width: 95%;
@@ -50,7 +51,7 @@ color: rgb(220, 220, 143);
   // flex-basis: 80%;
 }
 
-.portfolioSubtitle{
+.portfolioSubtitle {
   // color: rgb(220, 220, 143);
   max-width: 100%;
   height: 7rem;
@@ -64,7 +65,7 @@ color: rgb(220, 220, 143);
 
 
 // ----------------modal---
-.modalSubtitle{
+.modalSubtitle {
   display: block;
   text-align: center;
   margin: auto;
@@ -72,13 +73,13 @@ color: rgb(220, 220, 143);
 }
 
 
-.modalPortfolioImage{
+.modalPortfolioImage {
   display: block;
   margin: auto;
-width: 100%;
-// height: auto;
-max-height: auto;
-display: block;
+  width: 100%;
+  // height: auto;
+  max-height: auto;
+  display: block;
 }
 
 
@@ -89,11 +90,12 @@ display: block;
 // ----------mobile------------------------
 
 @media screen and (min-width: $mobile) {
-    .portfolioSubtitle{
+  .portfolioSubtitle {
     font-size: 14px;
   }
-    .portfolioItemContent{
-      max-width: 97%;
+
+  .portfolioItemContent {
+    max-width: 97%;
   }
 }
 
@@ -102,32 +104,32 @@ display: block;
 
 
 @media screen and (min-width: $tablet) {
-  .portfolioList{
+  .portfolioList {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .portfolioContent{
+  .portfolioContent {
     padding: 20px;
   }
 
-  .portfolioItem{
+  .portfolioItem {
     display: block;
     text-align: center;
-  margin: 20px 20px;
+    margin: 20px 20px;
 
   }
-  
-  .portfolioItemContent{
+
+  .portfolioItemContent {
     max-width: 100%;
 
-  // flex-basis: 95%;
-  // flex-basis: 400px;
+    // flex-basis: 95%;
+    // flex-basis: 400px;
   }
 
-  .portfolioSubtitle{
+  .portfolioSubtitle {
     display: block;
     margin: auto;
-font-size: 16px;
+    font-size: 16px;
     // color: rgb(220, 220, 143);
     max-width: 500px;
   }
@@ -141,21 +143,21 @@ font-size: 16px;
 // ----------desktop------------------------
 
 @media screen and (min-width: $desktop) {
-  
-  .portfolioItemContent{
-    // flex-basis: 600px;
-  }
 
-  .portfolioSubtitle{
+  // .portfolioItemContent{
+  // flex-basis: 600px;
+  // }
+
+  .portfolioSubtitle {
     max-width: 500px;
     font-size: 18px;
   }
 
-.portfolioList{
+  .portfolioList {
     // display: flex;
     // flex-wrap: wrap;
     // justify-content: space-around;
     // align-items: baseline;
     grid-template-columns: repeat(3, 1fr);
-}
+  }
 }

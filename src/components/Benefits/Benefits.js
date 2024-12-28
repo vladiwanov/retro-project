@@ -15,11 +15,21 @@ export default function Benefits({ hash }) {
 
   // --------------IO------------------------
 
-  const cb = entries => {
+  const cbTxt = entries => {
     // console.log('ENRTIES IN CB::::::', entries);
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add(`${s.active}`);
+        entry.target.classList.add(`${s.activeTxt}`);
+        // observer.unobserve(entry);
+      }
+    });
+  };
+
+  const cbImg = entries => {
+    // console.log('ENRTIES IN CB::::::', entries);
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add(`${s.activeImg}`);
         // observer.unobserve(entry);
       }
     });
@@ -30,13 +40,21 @@ export default function Benefits({ hash }) {
     // threshold: 0.3,
   };
 
-  const observer = new IntersectionObserver(cb, options);
+  const observerTxt = new IntersectionObserver(cbTxt, options);
+  const observerImg = new IntersectionObserver(cbImg, options);
 
   useEffect(() => {
     const targets = document.querySelectorAll(`.${s.items}`);
     // console.log('TARGET_ARRAY:::::', targets);
 
-    targets.forEach(target => observer.observe(target));
+    targets.forEach(target => observerTxt.observe(target));
+  }, []);
+
+  useEffect(() => {
+    const targets = document.querySelectorAll(`.${s.imgContainer}`);
+    // console.log('TARGET_ARRAY:::::', targets);
+
+    targets.forEach(target => observerImg.observe(target));
   }, []);
 
   // ---------------------------------------

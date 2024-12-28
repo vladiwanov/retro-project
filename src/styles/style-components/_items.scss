@@ -1,17 +1,16 @@
+.item {
 
-.item{
-
-// outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 
-.cotentContainer{
+.cotentContainer {
   display: block;
 }
 
-.items{
+.items {
   display: block;
-  text-align: start; 
+  text-align: start;
   margin: 10px auto 0;
   font-size: 12px;
   font-weight: normal;
@@ -20,33 +19,40 @@
 }
 
 
-.active{
-  transform: scale(1);
-  animation: animate300 500ms linear ;
-  // animation: animate100 500ms linear ;
+.activeTxt {
+  // transform: scale(1);
+  // transform: scale(1);
+  // animation: animate300 500ms linear;
+  animation: animate100 800ms linear;
 }
 
-
+.activeImg {
+  // transform: scale(1);
+  // transform: scale(1);
+  // animation: animate300 500ms linear;
+  animation: animate150 800ms linear;
+}
 
 @media screen and (min-width:$mobile) {
-  .items{
+  .items {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: $tablet) {
-  .items{
+  .items {
     font-size: 16px;
     // max-width: calc(100%/2);
   }
-    .cotentContainer {
-      display: flex;
-      justify-content: space-between;
-    }
+
+  .cotentContainer {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: $desktop) {
-  .items{
+  .items {
     margin-left: 30px;
     font-size: 18px;
     // max-width: 550px;

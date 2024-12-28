@@ -1,58 +1,58 @@
 @import 'src/styles/main';
 
-.benefits{
-  background-color:$bgc-primary;
+.benefits {
+  background-color: $bgc-primary;
 }
 
-.itemContainer{
+.itemContainer {
   // position: relative;
   display: block;
   width: 100%;
-  margin:  20px auto;
+  margin: 20px auto;
   text-align: center;
   color: $primary-color;
 
 }
 
-.benefitsTitle{
+.benefitsTitle {
   // color: green;
   margin-top: 20px;
 }
 
 
-.benefitsSubtitle{
+.benefitsSubtitle {
   display: block;
   text-align: center;
-  margin:  auto ;
+  margin: auto;
   // color: green;
   font-size: 14px;
 }
 
 
 
-.contentContainer{
+.contentContainer {
   position: relative;
   display: block;
   width: 100%;
   // color: yellow;
 }
 
-.listContainer{
+.listContainer {
   width: 100%;
   margin: 0;
   font-size: 12px;
 
-  }
+}
 
-  .imgContainer{
-    // position: relative;
-    position: absolute;
-    // max-width: 400px;
-    // height: 250px;
-    z-index: -3;
-  }
+.imgContainer {
+  // position: relative;
+  position: absolute;
+  // max-width: 400px;
+  // height: 250px;
+  z-index: -3;
+}
 
-.benefitsBackdrop{
+.benefitsBackdrop {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -69,36 +69,34 @@
 
 
 
-@media screen and (min-width:$mobile){
-  
-}
+@media screen and (min-width:$mobile) {}
 
-@media screen and (min-width:$tablet){
- 
-  .benefits{
+@media screen and (min-width:$tablet) {
+
+  .benefits {
     // background-color: rgba(143, 143, 65, 0.4);
   }
 
-  .benefitsSubtitle{
-  font-size: 16px;
-  max-width: 1200px;  
+  .benefitsSubtitle {
+    font-size: 16px;
+    max-width: 1200px;
   }
 
 
-// .contentConteiner{
-//   display: flex;
-//     justify-content: space-around;  
-//     // color: green;
-// }
+  // .contentConteiner{
+  //   display: flex;
+  //     justify-content: space-around;  
+  //     // color: green;
+  // }
 
-.itemContainer{
-  display: flex;
-  justify-content: space-around;
-  // align-items: center;
-  align-items: top;
-}
+  .itemContainer {
+    display: flex;
+    justify-content: space-around;
+    // align-items: center;
+    align-items: top;
+  }
 
-  .benefitsBackdrop{
+  .benefitsBackdrop {
     display: none;
   }
 
@@ -107,7 +105,7 @@
   //   width: 100%;
   // }
 
-.imgContainer{
+  .imgContainer {
     position: static;
     display: block;
     z-index: 0;
@@ -118,28 +116,26 @@
   }
 }
 
-.listContainer{
+.listContainer {
   display: block;
   font-size: 16px;
-    text-align: start;
+  text-align: start;
 }
 
 
 
 
-@media screen and (min-width:$desktop){
-  .contentContainer{
-   
-    
+@media screen and (min-width:$desktop) {
+  .contentContainer {}
+
+  .benefitsSubtitle {
+    font-size: 20px;
   }
-.benefitsSubtitle{
-  font-size: 20px;}
 
-.listContainer{
-  font-size: 18px;
-}
+  .listContainer {
+    font-size: 18px;
+  }
 
 
 
 }
-

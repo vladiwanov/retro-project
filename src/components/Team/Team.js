@@ -12,7 +12,7 @@ export default function Team({ hash }) {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
         // console.log('ENTRY!!!::::🇩🇪::', entry.target);
-        entry.target.classList.add(`${s.active}`);
+        entry.target.classList.add(`${s.activeTxt}`);
       }
     });
   };
