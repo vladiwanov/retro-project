@@ -1,41 +1,41 @@
 @import 'src/styles/main.scss';
 
 .team {
-
   display: block;
   text-align: center;
   padding-top: 30px;
-
   //  max-width: $mobile;
   height: 100%;
   margin: 0 auto;
   // color: rgb(149, 188, 128);
   color: rgb(146, 199, 55);
   // color: rgb(110, 185, 64);
-background-attachment: fixed;
+  // background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(
-      to right,
-      rgba(20, 20, 20, 0.84),
-      rgba(20, 20, 20, 0.84) /*  rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6) */
-    ),
+  background-image:
+    linear-gradient(to right,
+      // rgba(20, 20, 20, 0.84),
+      // rgba(20, 20, 20, 0.84)
+      rgb(50, 50, 50),
+      rgb(50, 50, 50),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)),
     url(../../images/team-img5.jpg);
 }
 
 
 
 
-.accent{
+.accent {
   font-weight: bold;
 }
 
 
 
 
-.companyName{
+.companyName {
   font-size: 12px;
   font-weight: bold;
   margin-right: 5px;
@@ -46,7 +46,7 @@ background-attachment: fixed;
 }
 
 
-.directions{
+.directions {
   // color: rgb(169, 237, 169);
   // color: rgb(149, 188, 128);
   color: rgb(146, 199, 55);
@@ -55,11 +55,11 @@ background-attachment: fixed;
   font-style: italic;
 }
 
-.directionsContainer{
+.directionsContainer {
   margin-top: 20px;
 }
 
-.directionsList{
+.directionsList {
   display: block;
 
 }
@@ -91,7 +91,7 @@ background-attachment: fixed;
 }
 
 @media screen and (min-width:$mobile) {
-  .companyName{
+  .companyName {
     font-size: 16px;
   }
 }
@@ -99,45 +99,45 @@ background-attachment: fixed;
 @media screen and (min-width:$tablet) {
   .teamContent {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 
-  .companyName{
-  font-size: 20px;
-}
+  .companyName {
+    font-size: 20px;
+  }
 
 
-  .directionsContainer{
+  .directionsContainer {
     margin-top: 20px;
   }
 
-  .list{
+  .list {
     // margin-left: 30px;
   }
 
-.directionsList{
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: start;
-}
+  .directionsList {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: start;
+  }
 
-.teamItems{
-  // max-width: 1600px;
-}
+  .teamItems {
+    // max-width: 1600px;
+  }
 }
 
 @media screen and (min-width:$desktop) {
-  .directionsContainer{
+  .directionsContainer {
     margin-top: 40px;
   }
 
-.companyName{
-  font-size: 24px;
-}
+  .companyName {
+    font-size: 24px;
+  }
 
 
-  .list{
+  .list {
     margin-left: 30px;
   }
 }
