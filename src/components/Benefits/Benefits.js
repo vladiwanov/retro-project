@@ -99,7 +99,7 @@ export default function Benefits({ hash }) {
               {/* <div className={s.benefitsBackdrop}></div> */}
               <Slider images={benefitsImages1} />
             </div>
-            <div>
+            <div className={s.textContainer}>
               <ul className={s.listContainer}>
                 {benefits.items2.map((item, i) => (
                   <li key={i} className={s.items}>
