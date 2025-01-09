@@ -1,7 +1,19 @@
 import portfolioImages from 'components/Portfolio/portfolioContent';
 
-const [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12] =
-  portfolioImages;
+const [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+  img12,
+] = portfolioImages;
 
 const portfolio = {
   title: 'Objects we made',
@@ -74,14 +86,14 @@ const portfolio = {
     },
     {
       title:
-          'Reconstruction of the building for the administrative center of the nature reserve "Gorgany" in the city of Nadvirna, Ivano-Frankivsk region',
+        'Reconstruction of the building for the administrative center in the city of Nadvirna, Ivano-Frankivsk region',
       img: img11,
       id: 'img11',
       alt: 'building for the administrative center of the nature reserve "Gorgany"',
     },
     {
       title:
-          'Reconstruction of the unfinished construction for the visit center of the Uzhan National Park in the village of Velyky Berezny, Transcarpathian region',
+        'New construction of the visit center in the village of Velyky Berezny, Transcarpathian region',
       img: img12,
       id: 'img12',
       alt: 'visit center of the Uzhan National Park in the village of Velyky Berezny"',

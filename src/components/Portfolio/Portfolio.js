@@ -24,7 +24,7 @@ export default function Portfolio({ hash }) {
   };
 
   useEffect(() => {
-    io('contentItems', '-5%', 'contentAnimation');
+    io('contentItems', '-5%', 'portfolioAnimation');
   }, []);
 
   return (
