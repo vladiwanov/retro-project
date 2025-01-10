@@ -39,7 +39,7 @@ const team = {
     title: 'Department of developer development and construction',
   },
   specialDirectionsTitle:
-    'Retro Proekt" LLC also develops specialized design sections: ',
+    '"Retro Proekt" LLC also develops specialized design sections: ',
   specialDirection: [
     '• technological section ',
     ' • examination and assessment of the technical condition of buildings and structures ',
