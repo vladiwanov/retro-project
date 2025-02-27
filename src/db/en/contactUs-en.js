@@ -19,7 +19,7 @@ const contactUs = {
     //   link: '',
     // },
   },
-  telGAP: ' Head Architector : +380 68 838 38 70 ',
-  adr: '79007 м.Lviv, Kloparivska,11-a/2',
+  telDD:'Vice Director: +380 67 819 02 85 ' ,
+  adr: '79007 м.Lviv, Kleparivska St,11-a/2',
 };
 export default contactUs;

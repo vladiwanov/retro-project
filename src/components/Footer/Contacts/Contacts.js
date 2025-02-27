@@ -5,7 +5,7 @@ import LanguageContent from 'tools/LanguigesContent/LanguigesContent';
 import io from 'tools/io';
 import { useEffect } from 'react';
 export default function Contacts() {
-  const { title, email, adr, telCEO, telGAP } = LanguageContent('contactUs');
+  const { title, email, adr, telCEO, telDD } = LanguageContent('contactUs');
   useEffect(() => {
     io('contacts', '-5%', 'contentAnimation');
   }, []);
@@ -30,7 +30,7 @@ export default function Contacts() {
         <p className={s.contact}>
           {telCEO.title}:{telCEO.tel}
         </p>
-        <p className={s.contact}>{telGAP}</p>
+        <p className={s.contact}>{telDD}</p>
       </div>
     </section>
   );
